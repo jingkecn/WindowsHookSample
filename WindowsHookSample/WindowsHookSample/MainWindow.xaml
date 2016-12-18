@@ -1,0 +1,20 @@
+﻿<Window x:Class="WindowsHookSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="BtnStart" Content="Button"/>
+            <Button x:Name="BtnStop" Content="Button"/>
+            <Button x:Name="BtnClear" Content="Button"/>
+        </StackPanel>
+        <TextBox x:Name="MyTextBox" Grid.Column="1" TextWrapping="Wrap" Text="Messages:"/>
+    </Grid>
+</Window>
